@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: chanchaltsynapse/decap-site
+  branch: main
+  auth_type: implicit
