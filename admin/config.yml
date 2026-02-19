@@ -1,5 +1,32 @@
 backend:
-  name: github
-  repo: chanchaltsynapse/decap-site
+
+  name: git-gateway
+
   branch: main
-  auth_type: implicit
+
+
+
+media_folder: "images/uploads"
+
+public_folder: "/images/uploads"
+
+
+
+collections:
+
+  - name: "posts"
+
+    label: "Posts"
+
+    folder: "content"
+
+    create: true
+
+    slug: "{{slug}}"
+
+    fields:
+
+      - { label: "Title", name: "title", widget: "string" }
+
+      - { label: "Body", name: "body", widget: "markdown" }
+
