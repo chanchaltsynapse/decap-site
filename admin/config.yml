@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: decap-site
+  repo: chanchaltsynapse/decap-site
   branch: main
 
 media_folder: "static/images"
