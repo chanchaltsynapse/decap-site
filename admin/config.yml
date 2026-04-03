@@ -1,6 +1,6 @@
 backend:
   name: github
-  rapo: decap-site
+  repo: decap-site
   branch: main
 
 media_folder: "static/images"
