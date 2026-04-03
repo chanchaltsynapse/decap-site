@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: chanchaltsynapse/decap-site
-  branch: main
+  name: git-gateway
+  branch: main  # or your default branch
 
 media_folder: "static/images"
 public_folder: "/images"
