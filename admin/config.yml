@@ -1,17 +1,14 @@
 backend:
-  name: github
-  repo: chanchaltiwari955/decap-cms
+  name: git-gateway
   branch: main
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
-publish_mode: editorial_workflow
-
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "content/posts"
+    folder: "content"
     create: true
     slug: "{{slug}}"
     fields:
