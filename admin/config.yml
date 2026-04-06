@@ -1,15 +1,33 @@
 backend:
-  name: test-repo
-  accept_roles: true
+  name: github
+  repo: chanchaltsynapse/decap-site
+  branch: main
 
-media_folder: "static/images"
+  # IMPORTANT: must match your OAuth server
+  base_url: http://52.167.43.197
+  auth_endpoint: /auth
+
+media_folder: "images"
 public_folder: "/images"
 
+site_url: http://52.167.43.197
+display_url: http://52.167.43.197
+
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
